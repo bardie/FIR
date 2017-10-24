@@ -37,3 +37,7 @@ FIR is not greedy performance-wise. It will run smoothly on a Ubuntu 14.04 virtu
 * REST API
 * Mailman
 * You name it :)
+
+
+curl -H "Content-Type: application/json" -X POST -d '{"id": 1,"detection": 20,"actor": 3,"plan": 5,"file_set": [],"date": "2017-10-19T09:14:35.934000","is_starred": false,"subject": "Unencrypted Traffic","description": "Stream received messages matching <netflow_l4_dst_port:\\\"80\\\"> (Current grace time: 1 minutes)","severity": 2,"is_incident": true,"is_major": true,"status": "O","confidentiality": 2,"category": 5,"opened_by": 1,"concerned_business_lines": [5]}' -H 'Authorization: Token 39c680529a18117e400250288da3398c7eb1d7ea' http://localhost:8000/api/incidents
+{"id":2,"detection":20,"actor":3,"plan":5,"file_set":[],"date":"2017-10-19T09:14:35.934000","is_starred":false,"subject":"Unencrypted Traffic","description":"Stream received messages matching <netflow_l4_dst_port:\\\"80\\\"> (Current grace time: 1 minutes)","severity":2,"is_incident":true,"is_major":true,"status":"O","confidentiality":2,"category":5,"opened_by":1,"concerned_business_lines":[5]}
